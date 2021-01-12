@@ -2,11 +2,11 @@ import React, { Component } from "react"
 
 class Multiple extends Component {
     state={
-        result:0,
-        num1:0,
-        num2:0,
-        num3:0,
-        num4:0,
+        result: '',
+        num1:'',
+        num2:'',
+        num3:'',
+        num4:'',
     }
     handleonchangeNum1(e){
         const num1= e.target.value
@@ -77,8 +77,8 @@ class Multiple extends Component {
                     <input aria-label="num4-input" type="text" onChange={this.handleonchangeNum4.bind(this)} value={this.state.num4}></input>
                 </div>
                 <div>
-                    <button aria-label="mul-button" onClick={this.handleClick.bind(this)}>Multiple</button>
-                    <c aria-label="mul-output">{this.state.result}</c>
+                    <button aria-label="multiple-button" onClick={this.handleClick.bind(this)}>Multiple</button>
+                    <b aria-label="multiple-output">{this.state.result}</b>
                 </div>
             </div>
         )
